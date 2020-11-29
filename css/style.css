@@ -1,3 +1,13 @@
-p {
-    padding: 0;
+.header {
+    height: 70px;
+    background: #1c7430;
+    box-shadow: 0 3px 6px #00000029;
+    display: flex;
+    align-items: center;
+}
+.header-icon{
+    width: 160px;
+    height: 40px;
+    background: url("../imangin/flooop.png") 50% no-repeat;
+    background-size: cover;
 }
