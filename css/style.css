@@ -1,3 +1,13 @@
-p {
-    padding: 0;
+.header {
+    height: 70px;
+    background: #ffffff;
+    box-shadow: 0 3px 6px #00000029;
+    display: flex;
+    align-items: center;
+}
+.header-icon {
+    width: 160px;
+    height: 32px;
+    background: url('../images/amazon-com-logo.svg') 50% no-repeat;
+    background-size: contain;
 }
