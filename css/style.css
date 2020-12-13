@@ -10,4 +10,22 @@
     height: 53px;
     background: url('../images/lg1.png')  no-repeat;
     background-size: contain;
+    position: relative;
+    left: -260px;
+}
+.header__btn {
+    background-color: #b1b1b1;
+    border-radius: 5px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.header__btn-icon {
+    background: url("../images/phone-icon.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+}
+a, a:hover {
+    text-decoration: none!important;
+    color: black!important;
 }
