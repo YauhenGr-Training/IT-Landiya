@@ -14,8 +14,23 @@
 .header__btn {
     background: #80bdff;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .header__btn-icon {
-
+    width: 15px;
+    height: 16px;
+    background: url("../images/phone-icon.svg") no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+.header__btn-text {
+    text-align: center;
+}
+.header__btn-number {
+    text-align: center;
+}
+a, a:hover {
+    text-decoration: none!important;
+    color: white!important;
 }
