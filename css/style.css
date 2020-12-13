@@ -11,3 +11,11 @@
     background: url('../images/amazon-com-logo.svg') 50% no-repeat;
     background-size: contain;
 }
+.header__btn {
+    background: #80bdff;
+    border-radius: 5px;
+}
+
+.header__btn-icon {
+
+}
