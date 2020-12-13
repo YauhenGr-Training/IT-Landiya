@@ -11,3 +11,19 @@
     background: url("../imangin/flooop.png") 50% no-repeat;
     background-size: cover;
 }
+.header__btn{
+    background: #80bdff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header__btn-icon{
+    width: 15px;
+    height: 16px;
+    background: url("../imangin/phone-icon.svg") no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+a,a:hover{
+    text-decoration: none!important;
+    color: white!important;
+}
