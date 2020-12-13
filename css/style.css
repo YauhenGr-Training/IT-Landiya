@@ -1,3 +1,23 @@
-p {
-    padding: 0;
+.header {
+    height: 70px;
+    background: #0c5460;
+    box-shadow: 0 3px #28a745;
+    display: flex;
+    align-items: center;
+}
+.header-icon{
+    height: 70px;
+    background-size: contain;
+}
+.header_btn {
+    background: #0c5460;
+    border-radius: 5px;
+}
+
+.header_btn-icon {
+    width: 15px;
+    height: 15px;
+    background: url("../Images/phone-icon.svg");
+    background-size: contain;
+    margin-right: 10px;
 }
