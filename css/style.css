@@ -9,3 +9,21 @@
     background: url('../images/wb_logo_2018.png') no-repeat;
     background-size: cover;
 }
+.header__btn{
+    background: #6f42c1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header__btn-icon {
+    width: 15px;
+    height: 15px;
+    background: url("../images/phone-icon.svg"); no-repeat;
+    background-size: contain;
+    margarin-right: 10px;
+}
+
+
+a:hover {
+    text-decoration: none!important;
+    color: white!important;
+}
