@@ -17,13 +17,28 @@
 .header__btn-icon {
     width: 15px;
     height: 15px;
-    background: url("../images/phone-icon.svg"); no-repeat;
+    background: url("../images/phone-icon.svg") no-repeat;
     background-size: contain;
     margarin-right: 10px;
 }
 
 
 a:hover {
-    text-decoration: none!important;
-    color: white!important;
+    text-decoration: none !important;
+    color: white !important;
+}
+.hero {
+  padding: 50px 0;
+    background: transparent linear-gradient(105deg, #e5286b, #8533ea 50%, #0577ff) no-repeat;
+}
+
+.hero h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.hero p { color: #fff }
+
+.hero__top-img {
+   width: 100%;
 }
