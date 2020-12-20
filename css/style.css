@@ -1,7 +1,10 @@
+*{
+    font_family: "Open Sans",Sans-serif;
+}
 .header {
     height: 70px;
     background: #ffffff;
-    box-shadow: 0 3px 6px #00000029;
+    box-shadow: 0 3px 6px #ffffff;
     display: flex;
     align-items: center;
 }
@@ -16,17 +19,32 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 .header__btn-icon {
     background: url("../images/phone-icon.svg") no-repeat;
     width: 15px;
     height: 15px;
     background-size: contain;
     margin-right: 10px;
-
-
 }
+
 a, a:hover{
     text-decoration: none!important;
     color: black!important;
+}
+
+.hero{
+    padding: 50px 0px;
+    background: transparent linear-gradient(105deg, #ff0003, #b736ea 50%, #1000ff) no-repeat;
+}
+
+hero h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-t__top-img{
+    width: 100%
+}
+.hero p{
+    color:#ffffff;
 }
