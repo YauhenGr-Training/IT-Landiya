@@ -1,3 +1,6 @@
+*{
+    font-family:'Open Sans',sans-serif;
+}
 .header {
     height: 70px;
     background: #1c7430;
@@ -23,7 +26,30 @@
     background-size: contain;
     margin-right: 10px;
 }
+.header__btn-text{
+    text-align: center;
+}
+.header__btn-number{
+    text-align: center;
+}
 a,a:hover{
     text-decoration: none!important;
     color: white!important;
+}
+
+.hero{
+    padding: 50px 0 ;
+    background: transparent linear-gradient(105deg,#e5286b,#8533ea 50%,#0577ff) no-repeat;
+}
+.hero h1{
+    text-align: center;
+    color: #fff;
+}
+.hero p{
+    color: #fff;
+    margin-bottom:100px ;
+}
+.hero__top-img{
+    width: 100%;
+    margin-bottom:50px ;
 }
