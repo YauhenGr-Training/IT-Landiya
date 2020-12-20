@@ -1,3 +1,4 @@
+* { font-family: 'Open Sans', sans-serif; }
 .header {
     height: 70px;
     background: #ffffff;
@@ -16,7 +17,6 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 .header__btn-icon {
     width: 15px;
     height: 16px;
@@ -33,4 +33,24 @@
 a, a:hover {
     text-decoration: none!important;
     color: white!important;
+}
+
+.hero {
+    padding: 50px 0;
+    background: transparent linear-gradient(105deg, #e5286b, #8533ea 50%, #0577ff) no-repeat;
+}
+
+.hero h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.hero p {
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.hero__top-img {
+    width: 100%;
+    margin-bottom: 50px;
 }
