@@ -1,3 +1,6 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
 .header {
     height: 70px;
     background: rgba(0, 0, 0, 0.65);
@@ -11,7 +14,7 @@
     background: url('../images/lg1.png')  no-repeat;
     background-size: contain;
     position: relative;
-    left: -260px;
+   <!-- left: -200px; -->
 }
 .header__btn {
     background-color: #b1b1b1;
@@ -21,11 +24,34 @@
 }
 .header__btn-icon {
     background: url("../images/phone-icon.svg") no-repeat;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background-size: contain;
+}
+.hero__top-img{
+    width: 100%;
 }
 a, a:hover {
     text-decoration: none!important;
     color: black!important;
+}
+.hero{
+    padding: 50px 0;
+    background: transparent linear-gradient(105deg, #FF0000, #8533ea 70%, #0577ff) no-repeat;
+}
+.hero h1{
+    text-align: center;
+    color: #ffffff;
+}
+.hero p{
+    color:#ffffff;
+    text-align: center;
+}
+.footer{
+    background: rgba(0, 0, 0, 0.65);
+    height: 72px;
+}
+.footer p{
+    color: black;
+    text-align: center;
 }
