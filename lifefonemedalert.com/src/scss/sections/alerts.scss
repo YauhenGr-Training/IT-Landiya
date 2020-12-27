@@ -1,0 +1,55 @@
+// .alert
+.alert {
+  // .alert__bg
+  &__bg {
+    background-color: #111;
+    opacity: .58;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+  }
+  // .alert__box
+  &__box {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+  }
+  // .alert__container
+  &__container {
+    position: relative;
+    top: 0;
+    max-width: 320px;
+    font-size: 15px;
+    text-align: center;
+    padding: 19px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05) inset;
+    border-top: 28px solid #2ecc71;
+    z-index: 9999999;
+    margin: 0 auto;
+  }
+  // .alert__button
+  &__button {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    background-color: #2ecc71;
+    cursor: pointer;
+    padding: 10px 40px;
+    margin: 25px auto 0;
+    border: none;
+    border-radius: 8px;
+  }
+  // #alertMessage
+  #alertMessage {
+    font-size: 20px;
+    color: #828889;
+  }
+}

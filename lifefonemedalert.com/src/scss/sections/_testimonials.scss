@@ -1,0 +1,123 @@
+// .testimonials
+.testimonials {
+  padding: 50px 0;
+  overflow: hidden;
+  
+  // .testimonials-title
+  &-title {
+    text-align: center;
+    font: bold 20px/20px Muli, sans-serif;
+    letter-spacing: 0;
+    color: #0a355f;
+    @include media-breakpoint-up(md){
+      font: bold 30px/20px Muli, sans-serif;
+      margin-right: 15px;
+    }
+  }
+
+  // .testimonials-icon
+  &-icon {
+    width: 185px;
+    height: 45px;
+    background: url('../images/trustpilot-vector-logo.svg') 50% no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+  }
+
+  // .testimonials-link
+  &-link {
+    text-align: center;
+    font: 10px/20px Muli, sans-serif;
+    color: #0a355f;
+  }
+
+  // .testimonials__step
+  &__step {
+    position: relative;
+    background: #3d3d3ddb;
+    border-radius: 13px;
+    padding: 30px 15px;
+
+    // .testimonials__step-star
+    &-star {
+      width: 102px;
+      height: 17px;
+      background: url('../images/star.svg') 50% no-repeat;
+      background-size: cover;
+      margin: 0 auto 25px;
+      @include media-breakpoint-up(md) {
+        width: 90px;
+        height: 14px;
+        margin: 0 auto 10px;
+      }
+    }
+
+    // .testimonials__step-title
+    &-title {
+      text-align: center;
+      font: bold 18px/20px Muli, sans-serif;
+      letter-spacing: 0;
+      color: #fff;
+      @include media-breakpoint-up(md) {
+        font: 600 16px/26px Muli, sans-serif;
+      }
+    }
+
+    // .testimonials__step-info
+    &-info {
+      text-align: center;
+      font: 14px/20px Muli, sans-serif;
+      letter-spacing: 0;
+      color: #fff;
+      margin-top: 18px;
+      @include media-breakpoint-up(md) {
+        max-width: 580px;
+        margin: 18px auto 0;
+        font-weight: 300;
+      }
+    }
+
+    // .testimonials__step-link
+    &-link {
+      text-align: center;
+      font: 10px/10px Muli, sans-serif;
+      letter-spacing: 0;
+      color: #fff;
+      margin-top: 15px;
+      @include media-breakpoint-up(md) {
+        color: #b9b9b9;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+      }
+    }
+    
+    @include media-breakpoint-up(md) {
+      margin-top: 34px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  // .testimonials__dots
+  &__dots {
+    width: 35px;
+    height: 8px;
+    margin: 18px auto 0;
+    
+    // .testimonials__dots .dot
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #dedede;
+    }
+    
+    // .testimonials__dots .active
+    .active {
+      background: #15abd7;
+    }
+  }
+}

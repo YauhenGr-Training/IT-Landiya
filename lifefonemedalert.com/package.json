@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "wordpress",
+    "listings"
+  ],
+  "main": "webpack.config.prod.babel.js",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev webpack --progress --env.dev --config config/webpack.config.dev.babel.js",
+    "dev": "cross-env NODE_ENV=dev webpack --progress --env.dev --config config/webpack.config.dev.babel.js",
+    "stage": "cross-env NODE_ENV=stage webpack --progress --env.stage --config config/webpack.config.stage.babel.js",
+    "prod": "cross-env NODE_ENV=prod webpack --progress --env.prod --config config/webpack.config.prod.babel.js",
+    "prebuild:prod": "npm-run-all --parallel clean sprites",
+    "lint:autofix": "stylefmt -c config/plugins/.stylelintrc -r src/scss/**/*.scss && eslint src/js --fix",
+    "postinstall": "del-cli node_modules/**/*.info"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "core-js": "^3.4.1",
+    "dotenv-webpack": "^1.7.0",
+    "lazysizes": "^5.1.2",
+    "save": "^2.3.3",
+    "smoothscroll-polyfill": "^0.4.4",
+    "webfontloader": "^1.6.28",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-async-to-generator": "^7.0.0",
+    "@babel/plugin-transform-object-assign": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@babel/standalone": "^7.0.0",
+    "autoprefixer": "^8.6.5",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-dynamic-import-node": "^2.2.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
+    "del-cli": "^1.1.0",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.1.2",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.11.0",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.6",
+    "postcss-reporter": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.5.4",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-spritesmith": "^0.4.1"
+  }
+}

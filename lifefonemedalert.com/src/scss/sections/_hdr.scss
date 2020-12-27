@@ -1,0 +1,75 @@
+// .hdr
+.hdr {
+  height: 60px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  // .hdr-icon
+  &-icon {
+    width: 106px;
+    height: 19px;
+    background: url("../images/Logo.png") 50% no-repeat;
+    background-size: cover;
+    @include media-breakpoint-up(lg) {
+      width: 158px;
+      height: 29px;
+    }
+  }
+  
+  // .hdr__btn
+  &__btn {
+    cursor: pointer;
+
+    // .hdr__btn-icon
+    &-icon {
+      width: 12px;
+      height: 13px;
+      background: url("../images/phone-icon.svg") 50% no-repeat;
+      background-size: cover;
+      margin-right: 5px;
+      @include media-breakpoint-up(md) {
+        width: 17px;
+        height: 18px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 20px;
+        height: 22px;
+      }
+    }
+
+    // .hdr__btn-info
+    &-info {
+      font: 10px/16px Muli, sans-serif;
+      letter-spacing: 0;
+      color: #0a355f;
+      text-align: right;
+      @include media-breakpoint-up(md) {
+        font: 13px/24px Muli, sans-serif;
+      }
+      @include media-breakpoint-up(lg) {
+        font: 17px/24px Muli, sans-serif;
+      }
+    }
+
+    // .hdr__btn-number
+    &-number {
+      font: 800 16px/14px Muli, sans-serif;
+      letter-spacing: 0;
+      color: #0a355f;
+      @include media-breakpoint-up(md) { font: 800 20px/18px Muli, sans-serif; }
+      @include media-breakpoint-up(lg) { font: 800 27px/24px Muli, sans-serif; }
+      
+    }
+  }
+  
+  // .hdr a:hover
+  a:hover {
+    text-decoration: none;
+  }
+  @include media-breakpoint-up(md) {
+    box-shadow: 0 3px 6px #00000029;
+    height: 70px;
+  }
+}

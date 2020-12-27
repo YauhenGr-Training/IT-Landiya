@@ -1,0 +1,92 @@
+// .thanks
+.thanks {
+  background: #eaeff2;
+  min-height: 600px;
+  
+  // .thanks__box
+  &__box {
+    padding: 32px 0;
+    background: #fff;
+
+    // .thanks__box-title
+    &-title {
+      text-align: left;
+      font: 17px/25px Muli, sans-serif;
+      color: #000;
+      @include media-breakpoint-up(md) {
+        font: 18px/25px Muli, sans-serif;
+      }
+      @include media-breakpoint-up(lg) {
+        text-align: center;
+      }
+    }
+
+    // .thanks__box-subtitle
+    &-subtitle {
+      text-align: left;
+      font: bold 16px/30px Muli, sans-serif;
+      color: #353535;
+      margin-top: 20px;
+      @include media-breakpoint-up(lg) {
+        margin-top: 40px;
+      }
+    }
+
+    // .thanks__box-info
+    &-info {
+      text-align: left;
+      font: 16px/26px Muli, sans-serif;
+      color: #353535;
+      margin-top: 20px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+      padding: 60px 0;
+    }
+  }
+  
+  // .thanks__bottom
+  &__bottom {
+    background: #0a355f;
+    border-radius: 0 0 10px 10px;
+    padding: 18px 0 21px;
+
+    // .thanks__bottom-title
+    &-title {
+      text-align: center;
+      font: bold 18px/24px Muli, sans-serif;
+      color: #fff;
+      margin-bottom: 7px;
+    }
+
+    // .thanks__bottom-icon
+    &-icon {
+      width: 13px;
+      height: 14px;
+      background: url('../images/phone-icon-white.svg') 50% no-repeat;
+      background-size: cover;
+      margin-right: 10px;
+      @include media-breakpoint-up(lg) {
+        width: 20px;
+        height: 21px;
+      }
+    }
+
+    // .thanks__bottom-number
+    &-number {
+      text-align: left;
+      text-decoration: underline;
+      font: 800 18px/14px Muli, sans-serif;
+      color: #fff;
+      @include media-breakpoint-up(lg) {
+        font: 800 25px/14px Muli, sans-serif;
+      }
+    }
+  }
+  @include media-breakpoint-up(md) {
+    min-height: 730px;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 1010px;
+  }
+}

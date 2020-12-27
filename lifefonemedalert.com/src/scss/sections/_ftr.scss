@@ -1,0 +1,38 @@
+// .ftr
+.ftr {
+  background: #fff;
+  padding: 50px 0;
+
+  // .ftr-icon
+  &-icon {
+    width: 106px;
+    height: 19px;
+    background: url("../images/Logo.png") 50% no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+  }
+
+  // .ftr__links
+  &__links {
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0;
+    color: #1f1f1f;
+    opacity: 1;
+
+    // .ftr__links-link
+    &-link {
+      display: block;
+      @include media-breakpoint-up(md) {
+        display: inline;
+        padding: 0 10px;
+        border-right: 1px solid;
+      }
+    }
+    @include media-breakpoint-up(md){
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+}
